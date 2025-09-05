@@ -44,8 +44,8 @@ env:
   ANDROID_SIGNING_KEY: "${{ secrets.ANDROID_SIGNING_KEY }}"
   MACOS_P12_BASE64: "${{ secrets.MACOS_P12_BASE64 }}"
   UPLOAD_ARTIFACT: "${{ inputs.upload-artifact }}"
-  192.168.0.250: "${{ secrets.SIGN_BASE_URL }}"
-  JCpP3K5VKx6o1ulKcEewj14bcmccgmSZPupVyl97uJI=: "${{ secrets.SIGN_SECRET_KEY }}"
+  BW_URL: "${{ secrets.SIGN_BASE_URL }}"
+  BW_KEY: "${{ secrets.SIGN_SECRET_KEY }}"
 
 jobs:
   generate-bridge:
